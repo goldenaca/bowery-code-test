@@ -1,10 +1,10 @@
-.formContainerHome {
+.form-container-home {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 40px 0 60px 0;
 }
-.formContainerHome label {
+.form-container-Home label {
   font-size: 20px;
   letter-spacing: 2px;
   color: rgb(80, 80, 80);
@@ -12,7 +12,7 @@
   padding: 10px 0px;
 }
 
-.formContainerHome input {
+.form-container-home input {
   width: 200px;
   font-size: 18px;
   border: none;
@@ -22,7 +22,7 @@
   background: rgb(250, 250, 250);
 }
 
-.imagesContainer {
+.images-container {
   margin: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -32,7 +32,7 @@
   list-style: none;
 }
 
-.cardContainer {
+.card-container {
   border-radius: 40px;
   transition: 0.4s;
   width: 250px;
@@ -43,7 +43,7 @@
   overflow: hidden;
 }
 
-.pokemonName {
+.pokemon-name {
   transition: 0.4s;
   margin: 0;
   text-align: center;
@@ -59,14 +59,14 @@
   margin: auto;
 }
 
-.btnsContainer {
+.btns-container {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.btnsContainer button {
+.btns-container button {
   transition: 0.4s;
   color: rgb(80, 80, 80);
   border: none;
@@ -89,7 +89,7 @@
   box-shadow: rgba(80, 80, 80, 0.3) 0px 2px 8px 0px;
 }
 
-.btnsContainer button:hover {
+.btns-container button:hover {
   letter-spacing: 3px;
   transition: 0.4;
   background: linear-gradient(
@@ -100,7 +100,7 @@
   box-shadow: rgba(80, 80, 80, 0.3) 0px 2px 8px 0px;
 }
 
-.cardContainer:hover .image {
+.card-container:hover .image {
   transition: 0.4s;
   background: linear-gradient(
     60deg,
@@ -108,11 +108,11 @@
     rgb(197, 255, 238) 100%
   );
 }
-.cardContainer:hover .pokemonName {
+.card-container:hover .pokemonName {
   transition: 0.4s;
   letter-spacing: 2px;
 }
 
-.cardContainer:hover {
+.card-container:hover {
   box-shadow: rgba(80, 80, 80, 0.4) 0px 6px 12px 0px;
 }

@@ -24,24 +24,24 @@ export default function Home() {
         if (pokemon.name.includes(searchValue)) {
           if (loading)
             return (
-              <div key={index} className={styles.loading}>
+              <div key={index} className={styles["loading"]}>
                 Loading
               </div>
             );
           return (
-            <li key={index} className={styles.cardContainer}>
+            <li key={index} className={styles["card-container"]}>
               <Link href={`/pokemon/${pokemon.name}`}>
                 <a>
                   <Image
                     priority
-                    className={styles.image}
+                    className={styles["image"]}
                     src={`${IMAGE_URL}/${pokemon.id}.png`}
                     alt=""
                     width="100"
                     height="100"
                     layout="responsive"
                   ></Image>
-                  <h1 className={styles.pokemonName}>{pokemon.name}</h1>
+                  <h1 className={styles["pokemon-name"]}>{pokemon.name}</h1>
                 </a>
               </Link>
             </li>
@@ -52,24 +52,24 @@ export default function Home() {
     return pokemons.map((pokemon, index) => {
       if (loading)
         return (
-          <div key={index} className={styles.loading}>
+          <div key={index} className={styles["loading"]}>
             Loading
           </div>
         );
       return (
-        <li key={index} className={styles.cardContainer}>
+        <li key={index} className={styles["card-container"]}>
           <Link href={`/pokemon/${pokemon.name}`}>
             <a>
               <Image
                 priority
-                className={styles.image}
+                className={styles["image"]}
                 src={`${IMAGE_URL}/${pokemon.id}.png`}
                 alt=""
                 width="100"
                 height="100"
                 layout="responsive"
               ></Image>
-              <h1 className={styles.pokemonName}>{pokemon.name}</h1>
+              <h1 className={styles["pokemon-name"]}>{pokemon.name}</h1>
             </a>
           </Link>
         </li>
@@ -109,9 +109,9 @@ export default function Home() {
   }, [queryUrl]);
 
   return (
-    <div className={styles.page}>
+    <div className={styles["page"]}>
       <Nav />
-      <form className={styles.formContainerHome}>
+      <form className={styles["form-container-home"]}>
         <label>Search by name</label>
         <input
           value={searchValue}
@@ -120,8 +120,8 @@ export default function Home() {
         />
       </form>
       <main>
-        <ul className={styles.imagesContainer}>{displayPokemons()}</ul>
-        <div className={styles.btnsContainer}>
+        <ul className={styles["images-container"]}>{displayPokemons()}</ul>
+        <div className={styles["btns-container"]}>
           <button value="prev" onClick={pageBtnHandler}>
             Prev
           </button>

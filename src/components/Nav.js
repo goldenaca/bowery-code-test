@@ -12,9 +12,9 @@ function Nav() {
   };
 
   return (
-    <div className={styles.nav}>
+    <div className={styles["nav"]}>
       <Link href="/home">
-        <a className={styles.title}>PokeDex </a>
+        <a className={styles["title"]}>PokeDex </a>
       </Link>
       <button onClick={logoutHandler}> Log-out</button>
     </div>
